@@ -1,4 +1,4 @@
-name: Deploy Exercise 3.1
+name: Deploy Express App
 
 on:
   push:
@@ -23,4 +23,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/exercise-03-01-your-pipeline:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/devops-with-docker-helsinki-express-app
